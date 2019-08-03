@@ -17,4 +17,5 @@ public class Test {
     public String getResult(){
         return "我是一个应用页面";
     }
+
 }
