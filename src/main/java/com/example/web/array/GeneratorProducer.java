@@ -14,7 +14,7 @@ interface Generator<T>{
 }
 public class GeneratorProducer {
     private static Random  r=new Random(47);
-    static class CharGenerator implements Generator<Character>{
+    public static class CharGenerator implements Generator<Character>{
         public static final char[] charSet = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM".toCharArray();
         @Override
         public Character next() {
