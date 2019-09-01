@@ -31,9 +31,8 @@ public class ReaderClass {
         return stringBuilder.toString();
     }
     public static void main(String[] args) {
-        ReaderClass readerClass = new ReaderClass();
         try {
-            LinkedList<String> strings = readerClass.fileReader("pom.xml");
+            LinkedList<String> strings = fileReader("pom.xml");
             Collections.reverse(strings);
             for (String string:strings){
                 System.out.println(string+"\n");
@@ -114,6 +113,7 @@ public class ReaderClass {
         }
         static class Redirecting{
             public static void main(String[] args) throws IOException {
+
                 InputStream in = System.in;
                 BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream("pom.xml"));
                 PrintStream out = System.out;
