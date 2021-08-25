@@ -20,6 +20,7 @@ public class stack<T> {
         return (T) storage.getFirst();
     }
     public boolean empty(){
+        Stack<Object> objects = new Stack<>();
         return storage.isEmpty();
     }
     @Override
